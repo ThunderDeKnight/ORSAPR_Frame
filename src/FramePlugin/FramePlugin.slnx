@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="Model/Model.csproj" />
-  <Project Path="View/View.csproj" />
-  <Project Path="Wrapper/Wrapper.csproj" />
-</Solution>
