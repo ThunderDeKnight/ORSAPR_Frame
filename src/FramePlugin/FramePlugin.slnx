@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="FramePlugin/FramePlugin.csproj" />
-  <Project Path="Model/Model.csproj" />
-  <Project Path="Wrapper/Wrapper.csproj" />
+  <Project Path="FramePlugin/FramePlugin.csproj" Id="4c361e5a-ec04-4eb9-8bef-74f8ee5f0dbf" />
+  <Project Path="Model/Model.csproj" Id="0ec803d9-c820-425f-9e11-cef629762a33" />
+  <Project Path="Wrapper/Wrapper.csproj" Id="9b40f043-8024-45a2-b01f-bd1e4b0b2410" />
 </Solution>
