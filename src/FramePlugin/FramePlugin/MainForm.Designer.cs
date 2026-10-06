@@ -47,8 +47,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label_Errors = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -103,6 +105,8 @@
             this.textBox_L1.Size = new System.Drawing.Size(100, 22);
             this.textBox_L1.TabIndex = 5;
             this.textBox_L1.Text = "150";
+            this.textBox_L1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_OnlyDigitKeyPress);
+            this.textBox_L1.Leave += new System.EventHandler(this.textBox_L1_Leave);
             // 
             // textBox_H1
             // 
@@ -111,6 +115,8 @@
             this.textBox_H1.Size = new System.Drawing.Size(100, 22);
             this.textBox_H1.TabIndex = 6;
             this.textBox_H1.Text = "200";
+            this.textBox_H1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_OnlyDigitKeyPress);
+            this.textBox_H1.Leave += new System.EventHandler(this.textBox_H1_Leave);
             // 
             // textBox_W
             // 
@@ -119,6 +125,8 @@
             this.textBox_W.Size = new System.Drawing.Size(100, 22);
             this.textBox_W.TabIndex = 7;
             this.textBox_W.Text = "20";
+            this.textBox_W.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_OnlyDigitKeyPress);
+            this.textBox_W.Leave += new System.EventHandler(this.textBox_W_Leave);
             // 
             // textBox_b
             // 
@@ -127,6 +135,8 @@
             this.textBox_b.Size = new System.Drawing.Size(100, 22);
             this.textBox_b.TabIndex = 8;
             this.textBox_b.Text = "15";
+            this.textBox_b.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_OnlyDigitKeyPress);
+            this.textBox_b.Leave += new System.EventHandler(this.textBox_b_Leave);
             // 
             // textBox_a
             // 
@@ -135,6 +145,8 @@
             this.textBox_a.Size = new System.Drawing.Size(100, 22);
             this.textBox_a.TabIndex = 9;
             this.textBox_a.Text = "15";
+            this.textBox_a.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_OnlyDigitKeyPress);
+            this.textBox_a.Leave += new System.EventHandler(this.textBox_a_Leave);
             // 
             // label6
             // 
@@ -183,12 +195,14 @@
             // 
             // button_Build
             // 
-            this.button_Build.Location = new System.Drawing.Point(111, 205);
+            this.button_Build.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_Build.Location = new System.Drawing.Point(117, 218);
             this.button_Build.Name = "button_Build";
             this.button_Build.Size = new System.Drawing.Size(119, 38);
             this.button_Build.TabIndex = 15;
             this.button_Build.Text = "Построить";
             this.button_Build.UseVisualStyleBackColor = true;
+            this.button_Build.Click += new System.EventHandler(this.button_Build_Click);
             // 
             // groupBox1
             // 
@@ -210,43 +224,51 @@
             this.groupBox1.Controls.Add(this.textBox_b);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(355, 249);
+            this.groupBox1.Size = new System.Drawing.Size(375, 262);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Выберите действие";
+            this.groupBox1.Text = "Параметры рамки";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label_Errors);
             this.groupBox2.Location = new System.Drawing.Point(21, 295);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(346, 75);
+            this.groupBox2.Size = new System.Drawing.Size(346, 143);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Предупреждения";
             // 
             // label_Errors
             // 
-            this.label_Errors.AutoSize = true;
-            this.label_Errors.Location = new System.Drawing.Point(30, 40);
+            this.label_Errors.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label_Errors.Location = new System.Drawing.Point(6, 18);
             this.label_Errors.Name = "label_Errors";
-            this.label_Errors.Size = new System.Drawing.Size(51, 16);
+            this.label_Errors.Size = new System.Drawing.Size(360, 122);
             this.label_Errors.TabIndex = 18;
-            this.label_Errors.Text = "label11";
             // 
-            // Form1
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(393, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(395, 426);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Построение рамки для фотографии";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -272,6 +294,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label_Errors;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
