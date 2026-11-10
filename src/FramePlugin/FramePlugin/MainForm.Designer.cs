@@ -49,12 +49,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label_Errors = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -112,53 +106,53 @@
             // 
             // textBox_L1
             // 
-            this.textBox_L1.BackColor = System.Drawing.Color.LightCoral;
+            this.textBox_L1.BackColor = System.Drawing.SystemColors.Window;
             this.textBox_L1.Location = new System.Drawing.Point(124, 44);
             this.textBox_L1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_L1.Name = "textBox_L1";
             this.textBox_L1.Size = new System.Drawing.Size(76, 20);
             this.textBox_L1.TabIndex = 5;
-            this.textBox_L1.Text = "50";
+            this.textBox_L1.Text = "200";
             // 
             // textBox_H1
             // 
-            this.textBox_H1.BackColor = System.Drawing.Color.LightCoral;
+            this.textBox_H1.BackColor = System.Drawing.SystemColors.Window;
             this.textBox_H1.Location = new System.Drawing.Point(124, 77);
             this.textBox_H1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_H1.Name = "textBox_H1";
             this.textBox_H1.Size = new System.Drawing.Size(76, 20);
             this.textBox_H1.TabIndex = 6;
-            this.textBox_H1.Text = "900";
+            this.textBox_H1.Text = "200";
             // 
             // textBox_W
             // 
-            this.textBox_W.BackColor = System.Drawing.Color.LightCoral;
+            this.textBox_W.BackColor = System.Drawing.SystemColors.Window;
             this.textBox_W.Location = new System.Drawing.Point(124, 110);
             this.textBox_W.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_W.Name = "textBox_W";
             this.textBox_W.Size = new System.Drawing.Size(76, 20);
             this.textBox_W.TabIndex = 7;
-            this.textBox_W.Text = "5";
+            this.textBox_W.Text = "15";
             // 
             // textBox_b
             // 
-            this.textBox_b.BackColor = System.Drawing.Color.LightCoral;
+            this.textBox_b.BackColor = System.Drawing.SystemColors.Window;
             this.textBox_b.Location = new System.Drawing.Point(124, 143);
             this.textBox_b.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_b.Name = "textBox_b";
             this.textBox_b.Size = new System.Drawing.Size(76, 20);
             this.textBox_b.TabIndex = 8;
-            this.textBox_b.Text = "50";
+            this.textBox_b.Text = "15";
             // 
             // textBox_a
             // 
-            this.textBox_a.BackColor = System.Drawing.Color.LightCoral;
+            this.textBox_a.BackColor = System.Drawing.SystemColors.Window;
             this.textBox_a.Location = new System.Drawing.Point(124, 176);
             this.textBox_a.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_a.Name = "textBox_a";
             this.textBox_a.Size = new System.Drawing.Size(76, 20);
             this.textBox_a.TabIndex = 9;
-            this.textBox_a.Text = "qwerty";
+            this.textBox_a.Text = "15";
             // 
             // label6
             // 
@@ -250,12 +244,6 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label_Errors);
             this.groupBox2.Location = new System.Drawing.Point(9, 283);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
@@ -286,66 +274,6 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.LightCoral;
-            this.label11.Location = new System.Drawing.Point(7, 15);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(351, 13);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Ширина рамки L1: значение не входит в диапазон от 120 до 600 мм";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.LightCoral;
-            this.label12.Location = new System.Drawing.Point(7, 28);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(352, 13);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Высота рамки H1: значение не входит в диапазон от 120 до 800 мм";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.LightCoral;
-            this.label13.Location = new System.Drawing.Point(7, 41);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(329, 13);
-            this.label13.TabIndex = 21;
-            this.label13.Text = "Ширина окантовки W: значение не входит в диапазон от 15 мм";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.LightCoral;
-            this.label14.Location = new System.Drawing.Point(7, 54);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(340, 13);
-            this.label14.TabIndex = 22;
-            this.label14.Text = "Толщина рамки b: значение не входит в диапазон от 10 до 40 мм";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.LightCoral;
-            this.label15.Location = new System.Drawing.Point(7, 67);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(458, 13);
-            this.label15.TabIndex = 23;
-            this.label15.Text = "Угол наклона a: введены буквы или недопустимые символы, нужны числовые значения";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.LightCoral;
-            this.label16.Location = new System.Drawing.Point(7, 80);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(437, 13);
-            this.label16.TabIndex = 24;
-            this.label16.Text = "Нарушено условие зависимости: высота H1 не соответствует ширине окантовки W.";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,7 +289,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -389,12 +316,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label_Errors;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
     }
 }
 
