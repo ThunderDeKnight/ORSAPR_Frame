@@ -112,7 +112,7 @@
             this.textBox_L1.Name = "textBox_L1";
             this.textBox_L1.Size = new System.Drawing.Size(76, 20);
             this.textBox_L1.TabIndex = 5;
-            this.textBox_L1.Text = "200";
+            this.textBox_L1.Text = "150";
             // 
             // textBox_H1
             // 
@@ -142,7 +142,7 @@
             this.textBox_b.Name = "textBox_b";
             this.textBox_b.Size = new System.Drawing.Size(76, 20);
             this.textBox_b.TabIndex = 8;
-            this.textBox_b.Text = "15";
+            this.textBox_b.Text = "30";
             // 
             // textBox_a
             // 
